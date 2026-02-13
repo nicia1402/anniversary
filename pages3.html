@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Why I Love You 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Why I Love You ❤️</h1>
+  <p>
+    I love your smile.  
+    I love your voice.  
+    I love how you care.  
+    I love how safe you make me feel.  
+    I love you for being you.
+    I love how you treat me like a baby. 
+    I love how you never judge me.
+    I love how you always keep an eye on me.
+    I love it when you are jealous( i surely dont do it on purpose)
+    I love how you always cheer me up.
+    I love how you always give me reassurances.
+    I love how you always comfort me.
+    I love how you always boost my confidence, my self-esteem.
+    I love how you have always fulfilled my wants.
+    I love how you have always given me what i have ever wanted.
+    I love how you bought me gifts online even when you were short on money. 
+    I just love you for everything you have done for me.
+    I love you.
+  
+  </p>
+
+  <a href="page4.html" class="button">One last thing… 💌</a>
+</div>
+
+<script>
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}
+setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
