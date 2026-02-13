@@ -49,6 +49,27 @@ function createHeart() {
 }
 setInterval(createHeart, 300);
 </script>
+<script>
+let holdTimer;
+const button = document.getElementById("holdButton");
+const message = document.getElementById("secretMessage");
+
+button.addEventListener("touchstart", startHold);
+button.addEventListener("mousedown", startHold);
+
+button.addEventListener("touchend", cancelHold);
+button.addEventListener("mouseup", cancelHold);
+
+function startHold() {
+  holdTimer = setTimeout(() => {
+    message.style.opacity = "1";
+  }, 2000); // 2 seconds hold
+}
+
+function cancelHold() {
+  clearTimeout(holdTimer);
+}
+</script>
 
 </body>
 </html>
