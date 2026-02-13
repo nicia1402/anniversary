@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forever in my heart, my love, all of it is yours. ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Forever & Always, we will stay committed. 💍</h1>
+  <p>
+    No distance.  
+    No time.  
+    No circumstance.  
+
+    Will ever change how much I love you.
+
+    Happy 1 Year, my love.
+    Happy Valentine’s.  
+    I’m yours. ❤️
+  </p>
+</div>
+
+<script>
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}
+setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
