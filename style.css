@@ -120,3 +120,16 @@ p {
   from {opacity: .4}
   to {opacity: 1}
 }
+/* Cinematic glow effect */
+.slide img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.6);
+  animation: slowZoom 8s ease-in-out infinite alternate;
+}
+
+/* Slow zoom animation */
+@keyframes slowZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}
