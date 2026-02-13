@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HAPPPPPYYYY ANNIVERSARYYYYYYYYYYYYYYYYYYYYYY BABYBYBYBY❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>HAPPY ANNIVERSARY AND VALENTINE'S!:3 💕</h1>
+  <p>one year with you and somehow i seem to fall deep in love with you everyday.</p>
+
+  <iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/track/4EWBhKf1fOFnyMtUzACXEc?utm_source=generator" 
+    width="300" height="80" frameBorder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+  </iframe>
+
+  <br><br>
+
+  <a href="page2.html" class="button">Tap here my love 💌</a>
+</div>
+
+<script>
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "❤️";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.animationDuration = (Math.random() * 3 + 3) + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 6000);
+}
+
+setInterval(createHeart, 300);
+</script>
+
+</body>
+</html>
